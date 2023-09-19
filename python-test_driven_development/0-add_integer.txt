@@ -1,0 +1,24 @@
+Tests for the add_integers function:
+
+>>>add_integer = __import__("0-add_integer").add_integer
+
+IN THE FOLLOWING CASES:
+	
+	only one integer:
+		>>> add_integer(4)
+		101
+	
+	negative integer:
+		>>> add_integer(-10, 3)
+		-7
+	
+	zero:
+		>>> add_integer(0,0)
+		0
+	
+	
+	no argument:
+		>>> add_integer()
+		Traceback (most recent call last):
+				...
+		TypeError: add_integer() missing 1 required positional argument: 'a'
