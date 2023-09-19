@@ -3,8 +3,8 @@
 
 
 class Square:
-	
-	def __init__(self, size):
-		"""initialized square instance"""
-		"""size of new square, double underscore to rep private"""
-		self.__size = size
+    """reps a square"""
+    def __init__(self, size):
+
+        """initialized square instance"""
+        self.__size = size
