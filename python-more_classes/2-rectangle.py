@@ -43,6 +43,8 @@ class Rectangle:
 
     def perimeter(self):
         """public inst method: perimeter of rectangle"""
+        if self.__width == 0 or self.__height == 0:
+            return (0)
         return ((self.__width * 2) + (self.height * 2))
 
     def __str__(self):
@@ -56,4 +58,4 @@ class Rectangle:
             [r.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
                 r.append("\n")
-            return ("".join(r))
+        return ("".join(r))
