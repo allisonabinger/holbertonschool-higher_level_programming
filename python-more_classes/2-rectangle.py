@@ -44,3 +44,16 @@ class Rectangle:
     def perimeter(self):
         """public inst method: perimeter of rectangle"""
         return ((self.__width * 2) + (self.height * 2))
+
+    def __str__(self):
+        """returns printable rep of the rectangle
+        represented with the # symbol"""
+        if self.__width == 0 or self.__height == 0:
+            return("")
+
+        r = []
+        for i in range(self.__height):
+            [r.append('#') for j in range(self.__width)]
+            if i != self.__height - 1:
+                r.append("\n")
+            return ("".join(r))
