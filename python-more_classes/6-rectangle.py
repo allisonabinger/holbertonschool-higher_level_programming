@@ -70,5 +70,7 @@ class Rectangle:
         return (r)
 
     def __del__(self):
-        """prints goodbye message thats so sad :( lol"""
+        """prints goodbye message thats so sad :( lol
+        as well as removes 1 from number_of_instances"""
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
