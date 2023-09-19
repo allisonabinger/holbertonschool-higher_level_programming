@@ -4,7 +4,7 @@
 
 class Rectangle:
     """new rectangle class with size and number of instances attributes"""
-    
+
     number_of_instances = 0
 
     def __init__(self, width=0, height=0):
