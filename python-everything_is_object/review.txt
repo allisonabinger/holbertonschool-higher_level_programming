@@ -9,7 +9,7 @@
 ### id()
 #### Prints variable identifier ()
 
-## Comparisons
+## Objects and Modifications
 
 		>>> a = 89
 		>>> b = 100
@@ -118,3 +118,23 @@
 		print(l1)
 
 		[1, 2, 3] will print because assign_value is a pure_function, not a modifier, and will not modify the parameters passed to it. 
+
+		Cloning Lists: using slice operator.
+			
+		a = [1, 2, 3]
+		b = a[:]
+		print b
+			[1, 2, 3]
+		b[0] = 5
+		print a
+			[1, 2, 3]
+
+		Tuples
+
+		Valid tuples:
+			a = ()
+			a = (1, 2)
+			a = (1, )
+
+		Invalid Tuples:
+			a = (1)
