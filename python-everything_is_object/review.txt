@@ -35,34 +35,64 @@
 		>>> s2 = s1
 		>>> print(s1 == s2)
 
-		True
+		True, they are pointing to the same object
 
 		>>> s1 = "Best"
 		>>> s2 = s1
 		>>> print(s1 is s2)
 
-		True
+		True, they are pointing to the same object
 
 		>>> s1 = "Best School"
 		>>> s2 = "Best School"
 		>>> print(s1 == s2)
 
-		True
+		True, the different variables have the same value (strings only)
 
 		>>> s1 = "Best School"
 		>>> s2 = "Best School"
 		>>> print(s1 is s2)
 
-		True
+		True, the different variable have the same value (strings only)
 
 		>>> l1 = [1, 2, 3]
 		>>> l2 = [1, 2, 3] 
 		>>> print(l1 == l2)
 
-		True
+		True, the different lists have the same value [tested with ==] but do not refer to the same object (different from strings)
 
 		>>> l1 = [1, 2, 3]
 		>>> l2 = [1, 2, 3] 
 		>>> print(l1 is l2)
 
-		False
+		False, True, the different lists have the same value [tested with ==] but do not refer [is] to the same object (different from strings)
+
+		>>> l1 = [1, 2, 3]
+		>>> l2 = l1
+		>>> print(l1 == l2)
+		
+		True
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
+		x
