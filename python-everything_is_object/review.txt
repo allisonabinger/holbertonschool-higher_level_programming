@@ -92,3 +92,17 @@
 		print(l2)
 
 		1, 2, 3, 4
+
+		def increment(n):
+ 		   n += 1
+		a = 1
+		increment(a)
+		print(a)
+
+		1: integers are immutable, values can't changed after they're created. 
+
+		def increment(n):
+    		n.append(4)
+		l = [1, 2, 3]
+		increment(l)
+		print(l)
