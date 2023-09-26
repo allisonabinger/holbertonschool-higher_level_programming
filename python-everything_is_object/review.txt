@@ -139,3 +139,15 @@
 		Invalid Tuples:
 			a = (1)
 			a = 1
+
+		Tuples are not the same:
+		a = (1, 2)
+		b = (1, 2)
+
+		a == b
+			True
+		a is b
+			False
+		
+		Empty tuples [a = ()] are the same, python makes empty tuples reference
+		the same object in memory to save space.
