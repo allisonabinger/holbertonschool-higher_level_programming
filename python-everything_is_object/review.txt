@@ -151,3 +151,6 @@
 		
 		Empty tuples [a = ()] are the same, python makes empty tuples reference
 		the same object in memory to save space.
+
+		id() : the id will change if the list is modified, such as a = a + [5],
+		however, it will not change in the case of a += [5]
