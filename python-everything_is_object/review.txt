@@ -1,0 +1,42 @@
+# Review of 'Everything is Object'
+
+
+## Functions
+
+### type()
+#### Prints the type of an Object.
+
+### id()
+#### Prints variable identifier ()
+
+## Comparisons
+
+		>>> a = 89
+		>>> b = 100
+
+		a and b do not point to the same object.
+
+		>>> a = 89
+		>>> b = 89
+
+		a and b point to the same object
+
+		>>> a = 89
+		>>> b = a
+		
+		a and b point to the same object
+
+		>>> a = 89
+		>>> b = a + 1
+
+		a and b do not point to the same object
+
+		>>> s1 = "Best School"
+		>>> s2 = s1
+		>>> print(s1 == s2)
+
+		True
+
+		>>> s1 = "Best"
+		>>> s2 = s1
+		>>> print(s1 is s2)
