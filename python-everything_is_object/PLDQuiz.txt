@@ -11,87 +11,98 @@
 
 ## Objects and Modifications
 
+    Do the following variables point to the same object?
 		>>> a = 89
 		>>> b = 100
 
-		a and b do not point to the same object.
+		
+        A: NO
 
 		>>> a = 89
 		>>> b = 89
 
-		a and b point to the same object
+		
+        A: YES
 
 		>>> a = 89
 		>>> b = a
 		
-		a and b point to the same object
+		A: Yes
 
 		>>> a = 89
 		>>> b = a + 1
 
-		a and b do not point to the same object
+		A: NO
+
+
+What will print?
 
 		>>> s1 = "Best School"
 		>>> s2 = s1
 		>>> print(s1 == s2)
 
-		True, they are pointing to the same object
+		
+        A: True
+
 
 		>>> s1 = "Best"
 		>>> s2 = s1
 		>>> print(s1 is s2)
 
-		True, they are pointing to the same object
+
+		A: True
 
 		>>> s1 = "Best School"
 		>>> s2 = "Best School"
 		>>> print(s1 == s2)
 
-		True, the different variables have the same value (strings only)
+		A: True
 
 		>>> s1 = "Best School"
 		>>> s2 = "Best School"
 		>>> print(s1 is s2)
 
-		True, the different variable have the same value (strings only)
+		A: True
 
 		>>> l1 = [1, 2, 3]
 		>>> l2 = [1, 2, 3] 
 		>>> print(l1 == l2)
 
-		True, the different lists have the same value [tested with ==] but do not refer to the same object (different from strings)
+		A: True
 
 		>>> l1 = [1, 2, 3]
 		>>> l2 = [1, 2, 3] 
 		>>> print(l1 is l2)
 
-		False, True, the different lists have the same value [tested with ==] but do not refer [is] to the same object (different from strings)
+		A: False
 
 		>>> l1 = [1, 2, 3]
 		>>> l2 = l1
 		>>> print(l1 == l2)
 		
-		True, the second list is now an alias for the same list.
-		
+		A: True
+
+
 		>>> l1 = [1, 2, 3]
 		>>>l2 = l1
 		>>> print(l1 is l2)
 
-		True, the alias points to the same oject
+		A: True
+
 
 		l1 = [1, 2, 3]
 		l2 = l1
 		l1.append(4)
 		print(l2)
 
-		[1, 2, 3, 4]
+		A: [1, 2, 3, 4]
 
 		l1 = [1, 2, 3]
 		l2 = l1
 		l1 = l1 + [4]
 		print(l2)
 
-		[1, 2, 3, 4]
+		A: [1, 2, 3, 4]
 
 		def increment(n):
  		   n += 1
@@ -99,7 +110,8 @@
 		increment(a)
 		print(a)
 
-		1: integers are immutable, values can't changed after they're created. when increment calls the variable a, it calls a copy of it. 
+
+		A: 1
 
 		def increment(n):
     		n.append(4)
@@ -107,7 +119,7 @@
 		increment(l)
 		print(l)
 
-		[1, 2, 3, 4] will print because lists in Python are mutable. the list l is being called, not a copy
+		A: [1, 2, 3, 4] 
 
 		def assign_value(n, v):
     		n = v
@@ -117,38 +129,51 @@
 		assign_value(l1, l2)
 		print(l1)
 
-		[1, 2, 3] will print because assign_value is a pure_function, not a modifier, and will not modify the parameters passed to it. 
+		A: [1, 2, 3]
 
-		Cloning Lists: using slice operator.
+		What is missing for this to print?
 			
 		a = [1, 2, 3]
-		b = a[:]
+		b = a[ ? ]
 		print b
 			[1, 2, 3]
 		b[0] = 5
 		print a
 			[1, 2, 3]
 
-		Tuples
+	Which one of these are valid tuples?
 
-		Valid tuples:
-			a = ()
-			a = (1, 2)
-			a = (1, )
+        a = (1)
+        a = [1]
+        a = (1, )
 
-		Invalid Tuples:
-			a = (1)
-			a = 1
+    Which one of these is invalid?
 
-		Tuples are not the same:
+        a = ()
+        a = (1, 2)
+        1 = (1 2)
+
+	
+
+	In the following example:
+
 		a = (1, 2)
 		b = (1, 2)
 
+        What will print?
+
 		a == b
-			True
+
+
+        A: True
+			
 		a is b
-			False
-		
+			
+		A: False
+
+
+
+        
 		Empty tuples [a = ()] are the same, python makes empty tuples reference
 		the same object in memory to save space.
 
