@@ -1,0 +1,99 @@
+Tests for the class BaseGeometry
+#################################
+
+>>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
+
+>>> gmt = BaseGeometry()
+
+Valid Input:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", 5)
+
+
+Area:
+
+    >>> gmt.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+Input None:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+No Arguments:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Too Many Arguments:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator(30, 50, 20)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+--Invalid Data Types Used--
+
+String:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", "invalid")
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+List:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", [1, 2, 3])
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+Float:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", 3.4)
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+Bool:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", False)
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+Tuple:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side",(1, 3))
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+Set:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", None)
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+--Invalid Values--
+
+Zero:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", {"not", "correct"})
+    Traceback (most recent call last):
+    ...
+    TypeError: right_side must be an integer
+
+Negative Integer:
+    >>> gmt = BaseGeometry()
+    >>> gmt.integer_validator("right_side", -3)
+    Traceback (most recent call last):
+    ...
+    ValueError: right_side must be greater than 0
