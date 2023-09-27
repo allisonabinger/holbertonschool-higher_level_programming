@@ -3,6 +3,8 @@
 
 
 class BaseGeometry:
+    """reps base geometry"""
+
     def area(self):
         """nonexistent"""
         raise Exception("area() is not yet implemented")
