@@ -2,6 +2,7 @@
 """defines json string serialization function"""
 import json
 
+
 def to_json_string(my_obj):
     """serializes to json using dumps"""
 
