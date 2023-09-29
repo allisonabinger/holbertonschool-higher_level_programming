@@ -10,7 +10,7 @@ class Base:
 
     __nb_objects = 0
 
-    def __init(self, id=None):
+    def __init__(self, id=None):
         """initialize new base
             args:
                 id (int): id of new base"""
