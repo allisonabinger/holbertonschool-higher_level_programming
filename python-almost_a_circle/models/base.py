@@ -2,9 +2,9 @@
 """defines new base class model"""
 
 
-class Base():
+class Base:
     """represents base model
-    
+
         private class attribute:
             __nb_object (int): # of instantiated bases"""
 
@@ -14,7 +14,7 @@ class Base():
         """initialize new base
             args:
                 id (int): id of new base"""
-        
+
         if id is not None:
             self.id = id
         else:
