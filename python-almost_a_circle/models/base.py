@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """defines new base class model"""
 
 
