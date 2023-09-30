@@ -13,7 +13,8 @@ class Base:
     def __init__(self, id=None):
         """initialize new base
             args:
-                id (int): id of new base"""
+                id (int): id of new base
+        """
 
         if id is not None:
             self.id = id
