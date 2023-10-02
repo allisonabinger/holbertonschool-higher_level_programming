@@ -21,7 +21,7 @@ def Square(Rectangle):
         """returns the string representation of square"""
         return "[Square] ({}) {}/{} - {}".format(self.id,
                                                     self.x, self.y,
-                                                    self.size)
+                                                    self.width)
 
     @property
     def size(self):
