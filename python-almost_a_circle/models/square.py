@@ -19,7 +19,7 @@ def Square(Rectangle):
 
     def __str__(self):
         """returns the string representation of square"""
-        return "[Rectangle] ({}) {}/{} - {}".format(self.id,
+        return "[Square] ({}) {}/{} - {}".format(self.id,
                                                     self.x, self.y,
                                                     self.size)
 
@@ -29,7 +29,7 @@ def Square(Rectangle):
         return self.width
 
     @size.setter
-    def size(self, val):
+    def size(self, value):
         "setter: sets width and height to the same size"
-        self.width = val
-        self.height = val
+        self.width = value
+        self.height = value
