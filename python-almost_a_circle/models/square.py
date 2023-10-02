@@ -3,7 +3,7 @@
 from models.rectangle import Rectangle
 
 
-def Square(Rectangle):
+class Square(Rectangle):
     """represents a square"""
 
     def __init__(self, size, x=0, y=0, id=None):
