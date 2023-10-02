@@ -110,8 +110,6 @@ class Rectangle(Base):
                     5th: y
                 **kwargs (dict): new key/value pairs
         """
-        if args and len(args) == 0:
-            Raise ValueError("args must be greater than 0")
         if len(args) >= 2:
             setattr(self, 'width', args[1])
         if len(args) >= 3:
