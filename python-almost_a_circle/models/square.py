@@ -39,10 +39,9 @@ class Square(Rectangle):
             args:
                 args(ints): new attribute values:
                     1st: id
-                    2nd: width
-                    3rd: size
-                    4th: x
-                    5th: y
+                    2nd: size
+                    3rd: x
+                    4th: y
                 **kwargs (dict): new key/value pairs
         """
         if len(args) >= 1:
@@ -51,14 +50,14 @@ class Square(Rectangle):
             setattr(self, 'size', args[1])
         if len(args) >= 3:
             setattr(self, 'x', args[2])
-        if len(args) >= 3:
+        if len(args) >= 4:
             setattr(self, 'y', args[3])
-        for key, value in kwargs.items():
-            setattr(self, key, value)
+        if len(args) != 0:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
 
     def to_dictionary(self):
-        return(
-            'id': self.id,
+        return ('id': self.id,
             'size': self.width,
             'x': self.x,
             'y': self.y
