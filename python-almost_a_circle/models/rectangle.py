@@ -91,11 +91,6 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
-        if self.width == 0 or self.height == 0:
-            return("")
-        r = []
+        """prints rectangle using # character to stdout"""
         for i in range(self.height):
-            [r.append("#") for j in range(self.width)]
-            if i != self.height - 1:
-                r.append("\n")
-        return ("".join(r))
+            print("#" * self.width)
