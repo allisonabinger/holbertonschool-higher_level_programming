@@ -98,6 +98,29 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
+    def update(self, *args, **kwargs):
+        """updates rectangle
+
+            args:
+                args(ints): new attribute values:
+                    1st: id
+                    2nd: width
+                    3rd: height
+                    4th: x
+                    5th: y
+                **kwargs (dict): new key/value pairs
+        """
+        if len(args) >= 2:
+            setattr(self, 'width', args[1])
+        if len(args) >= 3:
+            setattr(self, 'height', args[2])
+        if len(args) >= 4:
+            setattr(self, 'x', args[3])
+        if len(args) >= 5:
+            setattr(self, 'y', args[4])
+        for key, value in kwargs.items():
+            setattr(self, key, value)
+
     def __str__(self):
         """returns print and str representation of the rectangle"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
