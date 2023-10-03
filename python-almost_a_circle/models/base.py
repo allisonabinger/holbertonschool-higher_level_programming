@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-import json
 """defines new base class model"""
+import json
 
 
 class Base:
