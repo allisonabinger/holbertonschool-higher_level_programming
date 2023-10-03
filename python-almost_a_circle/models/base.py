@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+import json
 """defines new base class model"""
 
 
@@ -22,3 +23,9 @@ class Base:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
     
+    def to_json_string(list_dictionaries):
+        if list_dictionaries is None or len(list_dictions) is 0:
+            return ('"[]"')
+        else:
+            new_string = json.dumps(list_dictionaries)
+            return new_string
