@@ -70,4 +70,10 @@ class Square(Rectangle):
                     self.y = v
 
     def to_dictionary(self):
-        return {'id': self.id, 'size': self.width, 'x': self.x, 'y': self.y}
+        """returns dict rep of a square"""
+        return {
+            'id': self.id,
+            'size': self.width,
+            'x': self.x,
+            'y': self.y
+            }
