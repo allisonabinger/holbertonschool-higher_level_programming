@@ -33,6 +33,6 @@ class Base:
             for d in list_dictionaries:
                 if type(d) is not dict:
                     return "[]"
+            return json.dumps(list_dictionaries)
         else:
             return "[]"
-        return json.dumps(list_dictionaries)
