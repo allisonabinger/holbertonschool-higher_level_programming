@@ -120,10 +120,20 @@ class TestBase_create(unittest.TestCase):
         square2 = Square.create(**square1_dict)
         self.assertNotEqual(square1, square2)
     
-class TestBase_load_from_json_string(unittest.TestCase):
+class TestBase_load_from_file(unittest.TestCase):
     """
-    Unit testing for the load_from_json_string in the Base Class
+    Unit testing for the load_from_file in the Base Class
     """
+
+    def test_invalid_arg_num(self):
+        with self.assertRaises(TypeError):
+            Base.load_from_file([], 1)
+    
+"""
+------------------------------
+Need to add more tests here
+------------------------------
+"""
 
 
     
