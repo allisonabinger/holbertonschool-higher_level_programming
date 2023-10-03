@@ -41,7 +41,7 @@ class TestRectangle_init(unittest.TestCase):
         r1 = Rectangle(5, 4, 3, 2, None)
         r2 = Rectangle(5, 4, 3, 2, None)
         self.assertNotEqual(r1.id, r2.id)
-    
+
     def test_width_getter(self):
         r1 = Rectangle(5, 4, 4, 4, 1)
         self.assertEqual(5, r1.width)
@@ -50,7 +50,7 @@ class TestRectangle_init(unittest.TestCase):
         r1 = Rectangle(5, 4, 4, 4, 1)
         r1.width = 3
         self.assertEqual(3, r1.width)
-    
+
     def test_height_getter(self):
         r1 = Rectangle(5, 4, 4, 4, 1)
         self.assertEqual(4, r1.height)
@@ -59,11 +59,11 @@ class TestRectangle_init(unittest.TestCase):
         r1 = Rectangle(5, 4, 4, 4, 1)
         r1.height = 3
         self.assertEqual(3, r1.height)
-    
+
     def test_x_getter(self):
         r1 = Rectangle(5, 4, 4, 4, 1)
         self.assertEqual(4, r1.x)
-    
+
     def test_x_setter(self):
         r1 = Rectangle(5, 4, 4, 4, 1)
         r1.x = 2
@@ -77,7 +77,7 @@ class TestRectangle_init(unittest.TestCase):
         r1 = Rectangle(5, 4, 4, 4, 1)
         r1.y = 3
         self.assertEqual(4, r1.x)
-        
+
 
 class TestRectangle_width(unittest.TestCase):
     """
@@ -120,6 +120,7 @@ class TestRectangle_width(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             Rectangle(complex(4), 2)
 
+
 class TestRectangle_height_attr(unittest.TestCase):
     """
     Unit test for the height attribute in the Rectangle
@@ -159,7 +160,8 @@ class TestRectangle_height_attr(unittest.TestCase):
 
     def test_complex_height(self):
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            Rectangle(2,complex(4))
+            Rectangle(2, complex(4))
+
 
 class TestRectangle_x_attr(unittest.TestCase):
     """
@@ -239,7 +241,6 @@ class TestRectangle_y(unittest.TestCase):
     def test_tuple_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
             Rectangle(1, 2, 1, (1, 2, 3))
-
 
 
 """
