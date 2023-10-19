@@ -1,1 +1,1 @@
--- inserts a new row into the table
+-- lists all rows 
