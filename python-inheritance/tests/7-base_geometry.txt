@@ -5,7 +5,7 @@ Tests for the class BaseGeometry
 
 >>> gmt = BaseGeometry()
 
-Valid Input:
+Correct Input:
     >>> gmt = BaseGeometry()
     >>> gmt.integer_validator("right_side", 5)
 
