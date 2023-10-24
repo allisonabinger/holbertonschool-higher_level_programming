@@ -7,19 +7,18 @@ import sys
 def list_states(username, password, database_name):
     """lists all states in db"""
     db = MySQLdb.connect(
-        user=username
-        passwd=password
+        user=username,
+        passwd=password,
         db=database_name,
         host="localhost",
         port=3306
     )
     cursor = db.cursor()
-    request = "SELECT * FROM states ORDER BY id"
-    cursor.execute(request)
+    
+    cursor.execute("SELECT * FROM states ORDER BY id")
+    states = cursor.fetchall()
 
-    response = cursor.fetchall()
-
-    for state in response:
+    for state in states:
         print(state)
     
     cursor.close()
