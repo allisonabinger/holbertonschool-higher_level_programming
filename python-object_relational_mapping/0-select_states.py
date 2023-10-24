@@ -4,13 +4,31 @@ import MySQLdb
 import sys
 
 
-if __name__ == "__main__":
-    db = MySQLdb.connect(host="localhost", user=sys.argv[1],
-                         passwd=sys.argv[2], db=sys.argv[3], port=3306)
-    cur = db.cursor()
-    cur.execute("SELECT * FROM states")
-    rows = cur.fetchall()
-    for row in rows:
-        print(row)
-    cur.close()
+def list_states(username, password, database_name, host, port)
+    """lists all states in db"""
+    db = MySQLdb.connect(
+        user=username
+        passwd=password
+        db=database_name,
+        host=host,
+        port=port
+    )
+    cursor = db.cursor()
+    request = "SELECT * FROM states ORDER BY states.id"
+    cursor.execute(request)
+
+    response = cursor.fetchall()
+
+    for state in response:
+        print(state)
+    
+    cursor.close()
     db.close()
+
+if __name__ == "__main__":
+	username = sys.argv[1]
+	password = sys.argv[2]
+	database_name = sys.argv[3]
+	host = "localhost"
+	port = 3306
+	list_states(username, password, database_name, host, port)
