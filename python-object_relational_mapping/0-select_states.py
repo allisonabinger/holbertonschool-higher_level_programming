@@ -1,18 +1,18 @@
 #!/usr/bin/python3
-""" Lists all states from db hbtn_0e_0_usa """
+""" lists all states from the database hbtn_0e_0_usa """
 
 
 import MySQLdb
 import sys
 
 
-def list_states(username, password, database_name, host, port):
+def list_all_states(username, password, db_name, host, port):
 
     """ Listing states in db """
     db = MySQLdb.connect(
         user=username,
         passwd=password,
-        db=database_name,
+        db=db_name,
         host=host,
         port=port
     )
@@ -32,7 +32,7 @@ def list_states(username, password, database_name, host, port):
 if __name__ == "__main__":
     username = sys.argv[1]
     password = sys.argv[2]
-    database_name = sys.argv[3]
+    db_name = sys.argv[3]
     host = 'localhost'
     port = 3306
-    list_states(username, password, database_name, host, port)
+    list_all_states(username, password, db_name, host, port)
