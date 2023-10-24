@@ -18,7 +18,8 @@ def filter_states(username, password, db_name, host, port):
     )
 
     cursor = db.cursor()
-    cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY states.id")
+    cursor.execute("SELECT * FROM states WHERE name"
+                   "LIKE 'N%' ORDER BY states.id")
 
     states = cursor.fetchall()
 
