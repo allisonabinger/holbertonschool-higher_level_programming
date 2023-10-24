@@ -20,9 +20,9 @@ def list_states(username, password, database_name, host, port):
     cursor = db.cursor()
     cursor.execute("SELECT * FROM states ORDER BY states.id")
 
-    results = cursor.fetchall()
+    states = cursor.fetchall()
 
-    for state in results:
+    for state in states:
         print(state)
 
     cursor.close()
