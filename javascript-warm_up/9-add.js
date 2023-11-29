@@ -1,11 +1,11 @@
-#!/usr/bin/local/node
+#!/usr/bin/node
 /**
  * prints the addition of two integers
  * first and second args are first and second integers, respectively
  * uses function prototype: function add(a,b)
  */
-function add (a,b) {
-  return a + b
+function add (a, b) {
+  return a + b;
 }
 const args = process.argv.slice(2);
 const x = +args[0];
