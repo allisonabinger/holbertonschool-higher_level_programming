@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * prints a square using the 'X' character
  * the length and width of the square is the first argument
