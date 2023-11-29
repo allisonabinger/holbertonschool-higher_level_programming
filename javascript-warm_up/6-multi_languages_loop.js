@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * prints three lines using an array, similar to 1-multi_languages.js.
  */
