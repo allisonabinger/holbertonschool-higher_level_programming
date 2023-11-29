@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * searches the second biggest integer in the list of arguments passed to function
  * if no argument passed, or if # of arguments is 1, prints 0
