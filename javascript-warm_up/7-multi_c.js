@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * prints "C is fun" x amount of times
  * if x can't be converted to an int - prints "Missing number of occurrences"
