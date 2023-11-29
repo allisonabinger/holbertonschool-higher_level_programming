@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * prints "My number: <first arg converted to integer",
  * if the first argument can be converted.
