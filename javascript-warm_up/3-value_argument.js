@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * prints argument given after calling function
  * or prints 'No argument' if none is given
