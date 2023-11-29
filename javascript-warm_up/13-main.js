@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * calls add function to test export
  */
