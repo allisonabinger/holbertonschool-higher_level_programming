@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * computes and prints a factorial
  * first arg is an integer used
