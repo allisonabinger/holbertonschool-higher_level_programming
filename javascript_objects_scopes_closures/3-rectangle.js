@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * contains rectangle class
  */
@@ -13,9 +13,10 @@ class Rectangle {
       return this;// empty object
     }
   }
-  print() {
-    for (let n = 0; n < this.height; n++){
-      console.log('X'.repeat(this.width))
+
+  print () {
+    for (let n = 0; n < this.height; n++) {
+      console.log('X'.repeat(this.width));
       // much better method than using two+ loops!
     }
   }
