@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * contains Rectangle class
  * initializes width att with w, height att with h
@@ -14,3 +14,4 @@ class Rectangle {
     }
   }
 }
+module.exports = Rectangle;
