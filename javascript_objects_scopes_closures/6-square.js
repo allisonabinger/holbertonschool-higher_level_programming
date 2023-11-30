@@ -1,6 +1,7 @@
 #!/usr/bin/node
 /**
  * contains square class
+ * inherits from OGSquare (5-square)
  */
 const OGSquare = require('./5-square');
 // imports the rectangle parent class
