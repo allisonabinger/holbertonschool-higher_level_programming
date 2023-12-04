@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * Script that reads and prints the contents of a file.
  * First argument is the file path, if an error occured,
