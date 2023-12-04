@@ -2,7 +2,7 @@
 /**
  * Script that reads and prints the contents of a file.
  * First argument is the file path, if an error occured,
- * it prints the error object
+ * it prints the error object.
  */
 const fs = require('fs');
 /* fs is a built-in module that can interact with file system */
