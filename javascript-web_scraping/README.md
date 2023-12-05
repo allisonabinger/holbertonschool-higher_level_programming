@@ -86,4 +86,9 @@ Example:
 }
 ```
 This example establishes a request object to import the request module, and then initializes an object called options that will be used to specify the details of the **HTTP** request. It then calls the `request` function using the options object as the first argument, and uses the callback for the second argument to execute after the request is complete. 
-The **callback function** for this example takes an `err` object for an error that occurs during the request, the `res` object for information about the response, and `body` - the response body that is usually a string. If any errors occurs, they will be logged to the console and the function will exit. If not, the body is then parsed from a **JSON** string using `JSON.parse` and converts it to a **JavaScript** object. That object is then logged to the console, and the function completes.
+The **callback function** for this example takes an `err` object for an error that occurs during the request, the `res` object for information about the response, and `body` - the response body that is usually a string. If any errors occurs, they will be logged to the console and the function will exit. If not, the body is converted to a **JavaScript** object with`JSON.parse`, that object is logged to the console, and the function completes.
+
+
+## Misc. Functions used in this project
+
+### console.error
