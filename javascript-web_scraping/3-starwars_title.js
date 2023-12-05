@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * Script that prints the title of a Star Wars movie, where the epixode number
  * matches a given integer.
