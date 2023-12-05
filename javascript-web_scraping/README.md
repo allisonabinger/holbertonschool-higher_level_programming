@@ -117,3 +117,6 @@ This method instructs **Node.js** to terminate the process synchronously [(what 
 
 ## `includes()`
 This method is used to check if an array or string includes a certain element or substring. it takes the element or substring to search for as an argument and returns a boolean indicating whether or not it was found. It can be used by tacking it onto an array 
+
+## `forEach`
+This method is used to execute a provided function once for each element in an array. It takes a **callback function** as an argument, which is called for each element in the array. It can only be used on arrays, maps, or sets. 

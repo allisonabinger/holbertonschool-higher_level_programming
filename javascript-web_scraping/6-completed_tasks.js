@@ -17,11 +17,16 @@ request(url, (error, response, body) => {
   }
 
   const todoList = JSON.parse(body);
+  /* Makes array after parsing the body of response */
   todoList.forEach((task) => {
+    /* Takes each value, assigns it to `task` to execute function */
     if (task.completed) {
+      /* Checks if the completed value is not null/false in the API */
       completedList[task.userId] = (
         completedList[task.userId] || 0) + 1;
-      }
+        /* assigns the key/value pairs to completedList */
+        /* if user was not in list, they will be added with a count of 1 */
+      } 
     });
     console.log(completedList);
   });
