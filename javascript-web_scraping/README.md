@@ -63,3 +63,27 @@ Example:
 ```
 This example is similar to `readFile`, except it will use the data provided and write it to the file given.
 
+## The `request` Module
+
+The `request` module is a popular library for making HTTP requests in Node.js. After establishing a request object using `require`, you can use it to make `GET`, `POST`, `PUT`, `DELETE`, and more HTTP requests. It provides a flexible API and handles responses, and supports **JSON** parsing, form data, and timeouts.
+
+#### Syntax: `request(url, (error, response, body) => {...});`
+
+Example:
+```
+{
+  const request = require('request');
+  const options = {
+    url: 'https://apiurl.in/api/users',
+    method: 'GET'
+  };
+  request(options, (err, res, body) => {
+    if (err) {
+      return console.error('Error occured: ', err);
+    }
+    console.log(JSON.parse(body));
+  })
+}
+```
+This example establishes a request object to import the request module, and then initializes an object called options that will be used to specify the details of the **HTTP** request. It then calls the `request` function using the options object as the first argument, and uses the callback for the second argument to execute after the request is complete. 
+The **callback function** for this example takes an `err` object for an error that occurs during the request, the `res` object for information about the response, and `body` - the response body that is usually a string. If any errors occurs, they will be logged to the console and the function will exit. If not, the body is then parsed from a **JSON** string using `JSON.parse` and converts it to a **JavaScript** object. That object is then logged to the console, and the function completes.
