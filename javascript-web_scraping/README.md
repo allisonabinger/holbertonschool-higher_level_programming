@@ -62,6 +62,7 @@ Example:
 
 ```
 This example is similar to `readFile`, except it will use the data provided and write it to the file given.
+***
 
 ## The `request` Module
 
@@ -88,7 +89,31 @@ Example:
 This example establishes a request object to import the request module, and then initializes an object called options that will be used to specify the details of the **HTTP** request. It then calls the `request` function using the options object as the first argument, and uses the callback for the second argument to execute after the request is complete. 
 The **callback function** for this example takes an `err` object for an error that occurs during the request, the `res` object for information about the response, and `body` - the response body that is usually a string. If any errors occurs, they will be logged to the console and the function will exit. If not, the body is converted to a **JavaScript** object with`JSON.parse`, that object is logged to the console, and the function completes.
 
+***
 
 ## Misc. Functions used in this project
 
-### console.error
+## `console`
+The console object is a global object in **JavaScript**, meaning it can be accessed from anywhere in your code without needing to be imported. It provides a set of methods that are used to output information to the console. This [post](https://developer.mozilla.org/en-US/docs/Web/API/console) explains more on console and the different methods it has to offer.
+
+#### `console.log()`
+This is a method in JavaScript that is used to print any kind of variables defined before or inside of it, or just to print any message that needs to be displayed to the user.
+
+#### `console.error()`
+This is a method in JavaScript that is used to print error messages to the console. similar to console.log, but it includes a stack trace to help you find where the error occured. The data passed to `console.error()` can be any type, but is commonly a string or error object.
+
+>For more information on error handling in JavaScript, Craig Buckler has more information in this [blog post](https://www.sitepoint.com/javascript-error-handling/). 
+
+
+
+## `process`
+The process object is also a global object in **JS**. It provides information about, and control over, the current **Node.js** process. It can be used to read command line arguments, get environment variables, access the current working directory, and more.
+
+#### `process.argv[]`
+This is an array containing the command-line arguments passed when the **Node.js** process was launched. The first element [0] will be `node`, and the second element [1]will be the name of the **JavaScript** file. Any other elements will be command-line arguments passed from the user.
+
+#### `process.exit([code])`
+This method instructs **Node.js** to terminate the process synchronously [(what does that mean?)](https://stackoverflow.com/questions/748175/asynchronous-vs-synchronous-execution-what-is-the-difference) with an exit status of `code`. If the `code` is omitted, it either uses the success code of `0` or the value of `process.exitCode` if it has been set. **Node.js** will force the process the exit as quickly as possible, even if there are other operations pending that have not completed. 
+
+## `includes()`
+This method is used to check if an array or string includes a certain element or substring. it takes the element or substring to search for as an argument and returns a boolean indicating whether or not it was found. It can be used by tacking it onto an array 
