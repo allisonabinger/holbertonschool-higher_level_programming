@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/local/bin/node
 /**
  * Script that prints the number of movies where the
  * character "Wedge Antilles" is present
@@ -6,7 +6,7 @@
  * Wedge Antilles is character ID 18
  */
 const request = require('request');
-const ID = '18';
+const wId = '18';
 const url = process.argv[2];
 
 request(url, (error, request, body) => {
@@ -17,9 +17,10 @@ request(url, (error, request, body) => {
     const data = JSON.parse(body);
     let n = 0;
     for (const movie in data.results) {
-      const chars = data.results[movie].chars;
-      for (const char in chars) {
-        if (chars[char].includes(ID)) {
+      const charList = data.results[movie].characters;
+
+      for (const character in charList) {
+        if (charList[character].includes(wId)) {
           n++;
         }
       }
