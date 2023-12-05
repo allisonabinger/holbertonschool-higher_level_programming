@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/node
 /**
  * Script that gets the contents of a webpage and
  * stores it in a file
@@ -11,7 +11,7 @@ const fs = require('fs');
 const url = process.argv[2];
 const file = process.argv[3];
 
-if (!url || !file)  {
+if (!url || !file) {
   console.error('Invalid arguments');
   process.exit(1);
 }
