@@ -14,7 +14,7 @@ request.get(url, (error, response, body) => {
     console.error('Error:', error.message);
     process.exit(1);
   } else {
-  const data = JSON.parse(body);
-  console.log(`${data.title}`);
+    const data = JSON.parse(body);
+    console.log(`${data.title}`);
   }
 });
