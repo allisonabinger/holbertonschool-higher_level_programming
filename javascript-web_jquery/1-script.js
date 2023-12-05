@@ -4,4 +4,3 @@
  * Based on 1-main.html
  */
 $('header').css('color', '#FF0000');
-
