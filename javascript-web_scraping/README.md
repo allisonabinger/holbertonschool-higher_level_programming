@@ -46,7 +46,7 @@ The callback function takes two parameters: err and data. The function is everyt
 If an error occurs during the reading, the error object is passed to the callback function. Otherwise, the data is passed to the callback function. The callback function contains the `console.log` and the `console.error` statements to be executed when the function is called.
 
 ### `writeFile`
-##### Syntax: `fs.writeFile(path[, options], callback)`
+##### Syntax: `fs.writeFile(path, data[, options], callback)`
 
 Example:
 
@@ -61,3 +61,4 @@ Example:
   });
 
 ```
+This example is similar to `readFile`, except it will use the data provided and write it to the file given.
