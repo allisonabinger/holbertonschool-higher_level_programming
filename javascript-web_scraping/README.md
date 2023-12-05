@@ -62,3 +62,4 @@ Example:
 
 ```
 This example is similar to `readFile`, except it will use the data provided and write it to the file given.
+
