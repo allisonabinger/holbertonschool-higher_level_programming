@@ -120,3 +120,4 @@ This method is used to check if an array or string includes a certain element or
 
 ## `forEach`
 This method is used to execute a provided function once for each element in an array. It takes a **callback function** as an argument, which is called for each element in the array. It can only be used on arrays, maps, or sets. 
+> For more information on JavaScript data types, [w3schools](https://www.w3schools.com/js/js_datatypes.asp) has great cheat sheets!
